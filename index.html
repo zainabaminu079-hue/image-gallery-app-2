@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitchen & Home Decor Gallery</title>
+    <title>Premium Kitchen & Home Decor Shop</title>
     <style>
         * {
             box-sizing: border-box;
@@ -30,7 +29,7 @@
             color: #666;
             font-size: 1rem;
         }
-        /* Responsive Grid Layout */
+        /* Grid Layout */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -42,9 +41,9 @@
             position: relative;
             overflow: hidden;
             border-radius: 12px;
-            aspect-ratio: 1 / 1; /* Square layout looks great for products */
+            aspect-ratio: 1 / 1;
             background-color: #fff;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
         }
         .gallery-item img {
             width: 100%;
@@ -52,13 +51,13 @@
             object-fit: cover;
             transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.4s ease;
         }
-        /* Item Details Backdrop Overlay */
+        /* Product Information Overlay */
         .caption {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
             color: #fff;
             padding: 1.5rem 1.25rem;
             opacity: 0;
@@ -74,10 +73,10 @@
             font-size: 0.9rem;
             color: #ddd;
         }
-        /* Interactive Hover Animations */
+        /* Hover Effects */
         .gallery-item:hover img {
             transform: scale(1.08);
-            filter: brightness(0.85);
+            filter: brightness(0.8);
         }
         .gallery-item:hover .caption {
             opacity: 1;
@@ -89,47 +88,97 @@
 
     <header>
         <h1>Kitchen & Home Decor</h1>
-        <p>Curated essentials for beautiful living spaces</p>
+        <p>Curated premium pieces for beautiful living spaces</p>
     </header>
 
     <main class="gallery-grid">
         <!-- Item 1 -->
         <div class="gallery-item">
-            <!-- Replace 'blender.jpg' with your actual image filename -->
-            <img src="blender.jpg" alt="Premium Kitchen Blender">
+            <img src="IMG-20260613-WA0015.jpg" alt="Luxury Vase Decor">
             <div class="caption">
-                <h3>Premium Blender</h3>
-                <p>High-speed kitchen essential</p>
+                <h3>Ceramic Vase Set</h3>
+                <p>Minimalist tabletop decor</p>
             </div>
         </div>
 
         <!-- Item 2 -->
         <div class="gallery-item">
-            <!-- Replace 'ceramic-vases.jpg' with your actual image filename -->
-            <img src="ceramic-vases.jpg" alt="Minimalist Ceramic Vases">
+            <img src="IMG-20260613-WA0016.jpg" alt="Modern Desk Lamp">
             <div class="caption">
-                <h3>Ceramic Vases</h3>
-                <p>Matte-finish modern decor</p>
+                <h3>Luxury Accent Lamp</h3>
+                <p>Warm geometric ambient lighting</p>
             </div>
         </div>
 
         <!-- Item 3 -->
         <div class="gallery-item">
-            <!-- Replace 'wooden-boards.jpg' with your actual image filename -->
-            <img src="wooden-boards.jpg" alt="Handcrafted Wooden Serving Board">
+            <img src="IMG-20260613-WA0017.jpg" alt="Ornate Decor Mirror">
             <div class="caption">
-                <h3>Oak Serving Board</h3>
-                <p>Handcrafted cutting & serving block</p>
+                <h3>Crystal Accent Mirror</h3>
+                <p>Stunning statement piece</p>
             </div>
         </div>
 
         <!-- Item 4 -->
         <div class="gallery-item">
-            <!-- Replace 'coffee-mugs.jpg' with your actual image filename -->
-            <img src="coffee-mugs.jpg" alt="Artisan Coffee Mugs">
+            <img src="IMG-20260812-WA0035.jpg" alt="Countertop Rack Black">
             <div class="caption">
-                <h3>Artisan Mugs</h3>
-                <p>Stoneware set of 4</p>
+                <h3>Tiered Organizer Rack</h3>
+                <p>Sleek space-saving organizer</p>
+            </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item">
+            <img src="IMG-20260812-WA0036.jpg" alt="Wall Mounted Floating Shelf">
+            <div class="caption">
+                <h3>Floating Display Shelf</h3>
+                <p>Modern wall organizing unit</p>
+            </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item">
+            <img src="IMG-20260914-WA0021.jpg" alt="Large Kitchen Rack">
+            <div class="caption">
+                <h3>Multi-Tier Utility Rack</h3>
+                <p>Premium kitchen storage system</p>
+            </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="gallery-item">
+            <img src="IMG-20260915-WA0016.jpg" alt="Tabletop Fountain Diffuser">
+            <div class="caption">
+                <h3>Aroma Fountain Diffuser</h3>
+                <p>Soothing mist and ambiance</p>
+            </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="gallery-item">
+            <img src="IMG-20260925-WA0011.jpg" alt="Decorative Ceramic Pair Pink/Grey">
+            <div class="caption">
+                <h3>Artisan Vase Duet</h3>
+                <p>Contemporary teardrop design</p>
+            </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="gallery-item">
+            <img src="IMG-20260925-WA0012.jpg" alt="Decorative Ceramic Pair White/Pink">
+            <div class="caption">
+                <h3>Pastel Accent Vases</h3>
+                <p>Hand-glazed styling ceramics</p>
+            </div>
+        </div>
+
+        <!-- Item 10 -->
+        <div class="gallery-item">
+            <img src="IMG-20260925-WA0014.jpg" alt="Glass Display Trays">
+            <div class="caption">
+                <h3>Luxury Serving Trays</h3>
+                <p>Elegant gold-rimmed storage vanity</p>
             </div>
         </div>
     </main>
